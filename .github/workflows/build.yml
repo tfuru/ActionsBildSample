@@ -9,9 +9,9 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v3
-    # - name: docker build
-    #   working-directory: ./docker
-    #  run: docker compose build
-    # - name: docker run
-    #  working-directory: ./docker
-    #  run: docker compose run --rm app bash date
+    - name: docker build
+      working-directory: ./docker
+      run: docker compose build
+    - name: docker run
+      working-directory: ./docker
+      run: docker compose run --rm app bash date
