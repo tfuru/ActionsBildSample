@@ -14,4 +14,4 @@ jobs:
       run: docker compose build
     - name: docker run
       working-directory: ./docker
-      run: docker compose run --rm app bash date
+      run: docker compose run --rm app bash -c "echo 'Hello, world!'"
